@@ -6,7 +6,7 @@ from sample import *
 
 ## Problem parameters
 n = int(1e4)  # time horizon of one experiment
-num_iter = 5  # int(1e3)  # number of experiments
+num_iter = 1  # int(1e3)  # number of experiments
 K = 3
 b = 1
 A = 2e-3  # constant used to compute N
@@ -116,4 +116,6 @@ for label in legend.get_texts():
 
 for label in legend.get_lines():
     label.set_linewidth(1.5)  # the legend line width
+plt.xlabel('time')
+plt.ylabel('extreme regret')
 plt.show()
